@@ -53,6 +53,7 @@ nav{
     margin: 1em 0;
     background-color: lightgrey;
 }
+
 .nav-links a{
     padding: 1em;
 }
@@ -61,6 +62,7 @@ nav{
     display: flex;
     grid-area: img;
 }
+
 .header-img img{
     width: 339px;
     height: 224px;
@@ -74,6 +76,7 @@ nav{
 
 .sub-section{
     grid-area: sub-section;
+    min-height: 25vh;
 }
 
 .sub-section h2 {
@@ -89,11 +92,21 @@ footer{
     grid-area: foot;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #social-media-links {
-    border: 1px dotted gray;
     padding: 1em;
+}
+
+#social-media-links i {
+    color: gray;
+    padding: 0 .2em;
+    transition: i 1s ease;
+}
+
+#social-media-links i:hover {
+    color: lightblue;
 }
 
 @media screen and (min-width: 992px){
@@ -138,8 +151,5 @@ footer{
 
     .sub-section{
         padding-left: 1.5em;
-    }
-
-    footer{
     }
 }
