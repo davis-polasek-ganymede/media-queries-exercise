@@ -59,9 +59,9 @@ nav{
 
 .header-img {
     display: flex;
+    grid-area: img;
 }
 .header-img img{
-    grid-area: img;
     width: 339px;
     height: 224px;
     border: 1px solid black;
@@ -94,4 +94,52 @@ footer{
 #social-media-links {
     border: 1px dotted gray;
     padding: 1em;
+}
+
+@media screen and (min-width: 992px){
+    body{
+        grid-template-areas:
+                "title nav"
+                "img img"
+                "main sub-section"
+                "foot foot";
+    }
+
+    .alert-info{
+        display: none;
+    }
+
+    h1{
+        margin: 0;
+        display: flex;
+    }
+
+    .nav-links{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav-links li{
+        padding: 0;
+        background-color: #fff;
+        margin: 0;
+    }
+
+    .header-img img{
+        height: 890px;
+        width: 385px
+    }
+
+    .main{
+        width: 60vw;
+        padding-right: 1.5em;
+        min-height: 60vh;
+    }
+
+    .sub-section{
+        padding-left: 1.5em;
+    }
+
+    footer{
+    }
 }
