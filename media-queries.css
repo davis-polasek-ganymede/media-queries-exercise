@@ -50,17 +50,22 @@ nav{
     padding: 0 2em;
     display: flex;
     justify-content: center;
-    margin: 1em;
+    margin: 1em 0;
     background-color: lightgrey;
 }
 .nav-links a{
     padding: 1em;
 }
 
+.header-img {
+    display: flex;
+}
 .header-img img{
     grid-area: img;
     width: 339px;
     height: 224px;
+    border: 1px solid black;
+    flex-grow: 1;
 }
 
 .main{
