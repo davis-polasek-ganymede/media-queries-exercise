@@ -4,7 +4,7 @@
 
 body {
     width: 95%;
-    margin: 1em;
+    margin: auto;
     font-family: sans-serif;
     display: grid;
     grid-template-areas:
